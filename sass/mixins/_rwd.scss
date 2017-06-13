@@ -1,0 +1,37 @@
+// +++ +++ +++ CONFIG +++ +++ +++
+$phone: map-get($global-resolutions, phone);
+$tablet-portrait: map-get($global-resolutions, tablet-portrait);
+$tablet-landscape: map-get($global-resolutions, tablet-landscape);
+$desktop: map-get($global-resolutions, desktop);
+$desktop-xl: map-get($global-resolutions, xl);
+// +++ +++ +++ RWD +++ +++ +++
+@mixin for_phone_only {
+	@media (min-width: $phone){
+		@content;
+	}
+}
+@mixin for_phone_landscape {
+	@media (min-width: $phone) and (orientation: landscape){
+		@content;
+	}
+}
+@mixin for_tablet_portrait {
+	@media (min-width: $tablet-portrait){
+		@content;
+	}
+}
+@mixin for_tablet_landscape {
+	@media (min-width: $tablet-landscape){
+		@content;
+	}
+}
+@mixin for_desktop {
+	@media (min-width: $desktop){
+		@content;
+	}
+}
+@mixin from_xl_desktop {
+	@media (min-width: $desktop-xl) {
+		@content;
+	}
+}

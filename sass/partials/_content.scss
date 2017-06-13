@@ -1,0 +1,414 @@
+// +++ +++ +++ CONFIG +++ +++ +++
+// +++ +++ FONTS +++ +++
+$heading-font: $global-heading-font;
+$heading-font-color: map-get($global-font-colors, light-blue);
+$nav-font: $global-heading-font;
+$font-black: map-get($global-font-colors, black);
+$font-white: map-get($global-font-colors, white);
+$font-orange: map-get($global-font-colors, orange);
+
+
+// +++ +++ COLORS +++ +++
+$white: map-get($global-colors, white);
+$blue: map-get($global-colors, blue);
+$main-blue: map-get($global-colors, main-blue);
+$dark-blue: map-get($global-colors, dark-blue);
+$light-gray: map-get($global-colors, light-gray);
+$orange: map-get($global-colors, orange);
+$top-logo-color: map-get($global-colors, top-logo-color);
+
+// +++ +++ TRANSITIONS +++ +++
+$tr-slow: map-get($global-transition-time, slow);
+
+// +++ +++ +++ GLOBAL +++ +++ +++
+.services, .news, .contact {
+	background-color: $light-gray;
+}
+// +++ +++ +++ HEADER  / NAVIGATION +++ +++ +++
+.header {
+	width: 100%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	background-color: $top-logo-color;
+		@include for_tablet_landscape {
+			padding-bottom: 0;
+		}
+}
+.header_container {
+	width: 100%;
+	padding: 0 0.5rem;
+		@include for_tablet_landscape {
+			width: 90%;
+			margin: 0 auto;
+			padding: 0;
+		}
+}
+.fast-contact {
+	width: 100%;
+	padding: 0.5rem 0;
+	background-color: $top-logo-color;
+	text-align: center;
+		@include for_tablet_landscape {
+			width: 30%;
+			float: right;
+			padding: 1.938rem 0rem;
+			text-align: right;
+		}
+}
+.fast-contact-list {
+	width: 100%;
+		li {
+			margin: 0.25rem 0;
+				@include for_tablet_landscape {
+					margin: 0;
+				}
+		}
+}
+.fast-con-left {
+	@include for_phone_landscape {
+		width: 50%;
+		float: left;
+	}
+	@include for_tablet_landscape {
+		width: 100%;
+	}
+}
+.fast-con-right {
+	@include for_phone_landscape {
+		width: 50%;
+		float: right;
+	}
+	@include for_tablet_landscape {
+		width: 100%;
+	}
+}
+.top-contact-heading {
+	font-family: $heading-font;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	text-transform: uppercase;
+	color: $font-white;
+}
+.top-contact-link {
+	color: $font-white;
+}
+.top-logo {
+	width: 100%;
+	margin-bottom: 0.5rem;
+	text-align: center;
+		@include for_tablet_landscape {
+			width: 20%;
+			float: left;
+		}
+		a {
+			display: block;
+		}
+}
+.top_heading {
+	width: 100%;
+	text-align: center;
+		@include for_tablet_portrait {
+			padding: 0 4rem;
+		}
+		@include for_tablet_landscape {
+			width: 50%;
+			float: left;
+			padding: 1.625rem 1rem;
+		}
+	 	h1 {
+	 		font-family: serif;
+	 		font-style: italic;
+	 		font-size: 1.3rem;
+	 		line-height: 1.9rem;
+	 		text-transform: uppercase;
+	 		color: $font-white;
+				@include for_tablet_portrait {
+					font-size: 1.9rem;
+				}
+				@include for_tablet_landscape {
+					font-size: 1.7rem;
+				}
+	 	}
+}
+// +++ +++ +++ SECTION SLIDER +++ +++ +++
+.slider {
+	padding: 0;
+}
+// +++ +++ +++ SECTION SERVICES +++ +++ +++
+.section-heading-blue {
+	@extend %section-heading;
+	color: $heading-font-color;
+		@include for_tablet_landscape {
+			text-align: left;
+		}
+}
+.servis-box {
+	width: 100%;
+	min-height: 360px;
+	margin-bottom: 1rem;
+	text-align: center;
+	padding: 0 0.5rem;
+		img {
+			width: 90px;
+			height: auto;
+			margin: 1rem 0;
+		}
+		h2 {
+			min-height: 64px;
+			font-family: $heading-font;
+			font-size: 1.5rem;
+			line-height: 2.0rem;
+			text-transform: uppercase;
+			color: $heading-font-color;
+		}
+		p {
+			margin: 1.5rem 0;
+			font-size: 1.1rem;
+			line-height: 1.7rem;
+				@include for_tablet_portrait {
+					min-height: 190px;
+					height: 190px;
+					overflow: hidden;
+				}
+				@include for_tablet_landscape {
+					min-height: 245px;
+					height: 245px;
+				}
+				@include from_xl_desktop {
+					min-height: 225px;
+					height: 225px;
+				}
+		}
+	@include for_tablet_portrait {
+		float: left;
+		width: 49%;
+	}
+	@include for_tablet_landscape {
+		width: 33%;
+		float: left;
+		padding-bottom: 1rem;
+	}
+	@include for_desktop {
+		width: 20%;
+			p {
+				font-size: 1.0rem;
+				line-height: 1.6rem;
+			}
+	}
+}
+
+// +++ +++ +++ SECTION BRANDS +++ +++ +++
+.brands {
+	padding: 1rem 0;
+}
+
+// +++ +++ +++ SECTION NEWS +++ +++ +++
+.news-box {
+	@extend %news-box;
+	position: relative;
+	background-color: $blue;
+		@include for_tablet_landscape {
+			min-height: 400px;
+			height: 400px;
+			width: 33%;
+			float: left;
+		}
+		p {
+			margin-bottom: 3.5rem;
+			max-height: 11rem;
+			height: 11rem;
+			overflow: hidden;
+			line-height: 1.6rem;
+				@include for_phone_landscape {
+					margin-bottom: 1.5rem;
+				}
+				@include for_tablet_portrait {
+					margin-bottom: 0;
+				}
+				a {
+					display: none;
+				}
+		}
+}
+.news-hours {
+	@extend %news-box;
+	@include for_tablet_portrait {
+		width: 50%;
+		float: left;
+		min-height: 419px;
+		height: 419px;
+	}
+	@include for_tablet_landscape {
+			min-height: 400px;
+			height: 400px;
+			width: 33%;
+			float: left;
+	}
+}
+.hours-heading {
+	width: 100%;
+	font-family: $heading-font;
+	font-weight: 300;
+	font-size: 1.7rem;
+	line-height: 2.3rem;
+	margin-bottom: 1rem;
+		@include from_xl_desktop {
+			width: 92%;
+		}
+}
+.hours-list {
+	display: inline-block;
+	width: 100%;
+		li {
+			margin: 0.25rem 0;
+			padding: 0.5rem 0;
+			@include my_border('bottom', 1px, solid, $white);
+				&:last-child {
+					border: none;
+				}
+				span {
+					display: inline-block;
+				}
+		}
+}
+
+// +++ +++ +++ SECTION CONTACT +++ +++ +++
+.contact-heading {
+	background-color: $light-blue;
+		h1 {
+			@extend %section-heading;
+			margin: 0;
+			color: $font-white;
+		}
+}
+.address-box {
+	width: 100%;
+		@include for_tablet_portrait {
+			width: 41%;
+		}
+		@include for_tablet_landscape {
+			width: 35%;
+		}
+}
+.address-heading-left, .address-heading-right {
+	font-family: $heading-font;
+	font-size: 1.3rem;
+	line-height: 1.9rem;
+}
+.address-heading-left {
+	text-align: center;
+		@include from_xl_desktop {
+			text-align: left;
+		}
+}
+.address-heading-right {
+	text-align: center;
+		@include from_xl_desktop {
+			text-align: right;
+		}
+}
+.address-info {
+	text-align: center;
+	font-size: 1.198rem;
+	line-height: 1.8rem;
+	margin-top: 1rem;
+		li {
+			margin: 0.25rem 0;
+				i {
+					display: inline-block;
+					margin-right: 0.5rem;
+				}
+				a {
+					color: inherit;
+				}
+			&:nth-child(2){
+				padding-left: 1.5rem;
+			}
+		}
+}
+.a-left {
+		text-align: center;
+		@include for_tablet_portrait {
+			text-align: left;
+		}
+	}
+	.a-right {
+		text-align: center;
+		@include for_tablet_portrait {
+			text-align: right;
+		}
+	}
+.kontakt-box {
+	width: 50%;
+	.hours-heading {
+		width: 100%;
+	}
+}
+// +++ +++ +++ FOOTER +++ +++ +++
+.footer_box {
+	width: 100%;
+	margin-bottom: 0.25rem;
+		@include for_tablet_portrait {
+			width: 32%;
+			float: left;
+			margin: 0 0.25rem 2rem 0.25rem;
+		}
+}
+.f_box_heading {
+	@extend %main_heading;
+	color: $font-white;
+	text-align: center;
+		@include for_tablet_landscape {
+			text-align: left;
+		}
+}
+.center_f_heading {
+	line-height: 4rem;
+		@include for_tablet_landscape {
+			line-height: 2rem;
+		}
+}
+.fb_box {
+	width: 100%;
+	min-height: 400px;
+	height: 400px;
+	overflow: hidden;
+	padding: 0.25rem;
+}
+.f-address {
+	text-align: center;
+		@include for_tablet_portrait {
+			text-align: left;
+		}
+}
+.white_address-info {
+	color: $font-white;
+		li {
+			padding: 0.25rem 0;
+			i {
+				margin-right: 0.5rem;
+			}
+			a {
+				color: inherit;
+			}
+		}
+}
+.servis_list {
+	color: $font-white;
+		li {
+			list-style-type: disc;
+			padding: 0.25rem 0;
+		}
+}
+.copy {
+	width: 100%;
+	padding: 0.5rem 0;
+	text-align: center;
+	@include my_border('top', 2px, solid, rgba($white, 0.4));
+		span {
+			font-size: 0.6rem;
+			font-weight: 300;
+			color: $font-white;
+		}
+}
+

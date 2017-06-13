@@ -1,0 +1,20 @@
+// +++ ZMIENNE +++
+@import 'modules/_global-vars';
+
+// +++ MIXINS +++
+@import 'mixins/_mixins';
+@import 'modules/_mixins';
+
+// +++ RESET +++
+@import 'partials/_reset';
+
+// +++ EXTENDS +++
+@import 'partials/_extends';
+
+// +++ CONTENT +++
+@import 'navigation/_navigation';
+@import 'partials/_general';
+@import 'partials/_buttons';
+@import 'partials/_content';
+@import 'partials/_post';
+@import 'partials/_archives';

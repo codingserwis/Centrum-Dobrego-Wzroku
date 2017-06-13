@@ -1,0 +1,49 @@
+// +++ +++ +++ CONFIG +++ +++ +++
+// +++ +++ FONT COLORS +++ +++
+$link-light-blue: map-get($global-font-colors, light-blue);
+$link-white: map-get($global-font-colors, white);
+
+// +++ +++ COLORS +++ +++
+$white: map-get($global-colors, white);
+$light-blue: map-get($global-colors, light-blue);
+
+// +++ +++ FONT COLORS +++ +++
+$font-white: map-get($global-font-colors, $white);
+
+// +++ +++ TRANSITIONS +++ +++
+$tr-slow: map-get($global-transition-time, slow);
+
+%btn {
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: $link-light-blue;
+}
+
+.btn-more-blue {
+	@extend %btn;
+	@include my_border('all', 2px, solid, $light-blue);
+	color: $link-light-blue;
+	margin-top: 1rem;
+		@include my_transition(all, $tr-slow);
+			&:hover {
+				background-color: $light-blue;
+				color: $font-white;
+			}
+}
+.btn-more-white {
+	@extend %btn;
+	@include my_border('all', 2px, solid, $white);
+	color: $link-white;
+		@include my_transition(all, $tr-slow);
+			&:hover {
+				background-color: $white;
+				color: $light-blue;
+			}
+}
+.pos-abs {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0 0 1rem 1rem;
+}

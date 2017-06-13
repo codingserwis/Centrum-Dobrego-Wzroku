@@ -1,0 +1,10 @@
+<?php  
+			$args = array('post_type' => 'our-office',
+							'title' => 'Informacje kontaktowe Niemodlińska');
+
+			$loop = new WP_Query($args);
+			while($loop -> have_posts()) : $loop -> the_post();
+				get_template_part('template-parts/single-part/address-footer');
+			endwhile;
+		wp_reset_postdata();
+?>

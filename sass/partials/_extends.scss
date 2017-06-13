@@ -1,0 +1,50 @@
+// +++ +++ +++ CONFIG +++ +++ +++
+// +++ +++ FONTS +++ +++
+$heading-font: $global-heading-font;
+$heading-font-color: map-get($global-font-colors, light-blue);
+$nav-font: $global-heading-font;
+$font-black: map-get($global-font-colors, black);
+$font-white: map-get($global-font-colors, white);
+$font-orange: map-get($global-font-colors, orange);
+
+
+// +++ +++ COLORS +++ +++
+$white: map-get($global-colors, white);
+$blue: map-get($global-colors, blue);
+$main-blue: map-get($global-colors, main-blue);
+$dark-blue: map-get($global-colors, dark-blue);
+$light-gray: map-get($global-colors, light-gray);
+$orange: map-get($global-colors, orange);
+
+// +++ +++ TRANSITIONS +++ +++
+$tr-slow: map-get($global-transition-time, slow);
+
+// +++ +++ +++ EXTENDS +++ +++ +++
+%section-heading {
+	margin-bottom: 30px;
+	font-family: $heading-font;
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-align: center;
+	line-height: 2.1rem;
+		@include for_tablet_landscape {
+			text-align: left;
+		}
+}
+%news-box {
+	width: 100%;
+	padding: 2rem 1rem;
+	color: $font-white;
+}
+%main_heading {
+	font-family: $heading-font;
+	line-height: 2rem;
+}
+%posts-container {
+	width: 100%;
+	padding: 2rem 0;
+		@include for_tablet_landscape {
+			width: 70%;
+			float: left;
+		}
+}

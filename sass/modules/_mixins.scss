@@ -1,0 +1,32 @@
+// +++ BORDERS +++
+@mixin my_border ($side, $size, $type, $color) {
+	@if ($side == "all") {
+		border: $size $type $color;
+	} @else if ($side == "top") {
+		border-#{$side}: $size $type $color;
+	} @else if ($side == "righ") {
+		border-#{$side}: $size $type $color;
+	} @else if ($side == "bottom") {
+		border-#{$side}: $size $type $color;
+	} @else if ($side == "left") {
+		border-#{$side}: $size $type $color;
+	}
+}
+
+@mixin my_border_radius ($radius){
+	border-radius: $radius;
+}
+
+// +++ ANIMATIONS +++
+@mixin my_animation ($name){
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	}
+}
+// +++ TRANSITIONS +++
+@mixin my_transition ($prop, $time){
+	transition: $prop $time;
+}

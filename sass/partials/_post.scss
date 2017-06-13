@@ -1,0 +1,150 @@
+// +++ +++ +++ CONFIG +++ +++ +++
+// +++ +++ FONTS +++ +++
+$heading-font: $global-heading-font;
+$heading-font-color: map-get($global-font-colors, light-blue);
+$basic-font: $global-body-font;
+$nav-font: $global-heading-font;
+$font-black: map-get($global-font-colors, black);
+$font-white: map-get($global-font-colors, white);
+$font-orange: map-get($global-font-colors, orange);
+$font-blue: map-get($global-font-colors, light-blue);
+
+
+// +++ +++ COLORS +++ +++
+$white: map-get($global-colors, white);
+$blue: map-get($global-colors, blue);
+$main-blue: map-get($global-colors, main-blue);
+$dark-blue: map-get($global-colors, dark-blue);
+$light-gray: map-get($global-colors, light-gray);
+$orange: map-get($global-colors, orange);
+
+// +++ +++ RESOLUTIONS +++ +++
+$tablet-portrait: map-get($global-resolutions, tablet-portrait);
+$tablet-landscape: map-get($global-resolutions, tablet-landscape);
+$desktop: map-get($global-resolutions, desktop);
+
+// +++ +++ TRANSITIONS +++ +++
+$tr-slow: map-get($global-transition-time, slow);
+
+.main-post {
+	width: 100%;
+}
+.single-post-container {
+	@extend %posts-container;
+}
+.single-header {
+	height: 58px;
+	padding: 1rem;
+	background-color: $main-blue;
+		h1 {
+			color: $font-white;
+			font-size: 1.2rem;
+		}
+}
+.single-thumbnail {
+	margin-bottom: 0.5rem;
+		img {
+			width: 100%;
+			height: auto;
+		}
+}
+.news-heading {
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+.post-date {
+	margin: 0.5rem 0;
+	font-size: 0.9rem;
+}
+.single-header-blue {
+	h1 {
+		padding: 1rem 0;
+		font-size: 1.5rem;
+		color: $heading-font-color;
+	}
+}
+.single-post-aside {
+	width: 30%;
+	float: left;
+	margin-top: 150px;
+	padding: 0.5rem;
+}
+.single-content {
+	p {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+	}
+}
+.custom-post-side {
+	position: relative;
+	width: 30%;
+	float: left;
+	padding: 2rem 0 0 2rem;
+}
+.post-contact-box {
+	min-height: 530px;
+	height: 530px;
+		@include from_xl_desktop {
+			min-height: 440px;
+			height: 440px;
+		}
+	background-color: $main-blue;
+	color: $white;
+	padding: 1rem;
+		h2 {
+			text-transform: uppercase;
+			font-size: 1.4rem;
+			margin-bottom: 0.5rem;
+		}
+}
+.servis-post-title {
+	padding: 0.5rem;
+	background-color: $main-blue;
+	font-family: $heading-font;
+	color: $font-white;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	line-height: 2.0rem;
+	margin-bottom: 1rem;
+}
+.service-img {
+	width: 100%;
+	max-height: 440px;
+	overflow: hidden;
+	margin-bottom: 1rem;
+		img {
+			width: 100%;
+			height: auto;
+		}
+}
+.post-content {
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 1.6rem;
+		margin: 0.5rem 0;
+	}
+	p {
+		font-size: 1.1rem;
+		line-height: 1.7rem;
+		text-align: justify;
+	}
+	strong {
+		color: $orange;
+	}
+	ul, ol {
+		width: 90%;
+		margin: 0.25rem auto 0.25rem auto;
+		text-align: justify;
+			li {
+
+				font-weight: 700;
+				margin: 0.5rem 0;
+			}
+	}
+	ul {
+		list-style-type: disc;
+	}
+}
+.fixed-side-bar {
+	position: fixed;
+	bottom: 410px;
+}

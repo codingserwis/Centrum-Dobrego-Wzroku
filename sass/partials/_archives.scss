@@ -1,0 +1,52 @@
+// +++ +++ +++ CONFIG +++ +++ +++
+// +++ +++ FONTS +++ +++
+$heading-font: $global-heading-font;
+$heading-font-color: map-get($global-font-colors, light-blue);
+$nav-font: $global-heading-font;
+$font-black: map-get($global-font-colors, black);
+$font-white: map-get($global-font-colors, white);
+$font-orange: map-get($global-font-colors, orange);
+
+
+// +++ +++ COLORS +++ +++
+$white: map-get($global-colors, white);
+$blue: map-get($global-colors, blue);
+$main-blue: map-get($global-colors, main-blue);
+$dark-blue: map-get($global-colors, dark-blue);
+$light-gray: map-get($global-colors, light-gray);
+$orange: map-get($global-colors, orange);
+
+// +++ +++ RESOLUTIONS +++ +++
+$tablet-portrait: map-get($global-resolutions, tablet-portrait);
+$tablet-landscape: map-get($global-resolutions, tablet-landscape);
+$desktop: map-get($global-resolutions, desktop);
+
+// +++ +++ TRANSITIONS +++ +++
+$tr-slow: map-get($global-transition-time, slow);
+
+// +++ +++ +++ +++
+.archive-container {
+	@extend %posts-container;
+}
+.archive-sidebar {
+	width: 30%;
+	float: left;
+	margin: 2rem 0;
+	padding: 0 1rem;
+		div {
+			margin-bottom: 1rem ;
+		}
+}
+.single-archive {
+	margin-bottom: 1.5rem;
+}
+.archive-underscore {
+	width: 100%;
+}
+.widget-title {
+	width: 100%;
+	margin-bottom: 0.5rem;
+	padding: 0.75rem;
+	background-color: $blue;
+	color: $font-white;
+}

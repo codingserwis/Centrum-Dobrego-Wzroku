@@ -1,0 +1,38 @@
+// +++ +++ +++ GLOBAL FONTS +++ +++ +++
+$global-heading-font: 'Roboto', sans-serif;
+$global-body-font: 'Nunito', sans-serif;
+$global-body-font-size: 16px;
+// +++ +++ GLOBAL FONT COLORS +++ +++
+$global-font-colors: (
+	white: #fff,
+	black: #29313d,
+	light-blue: #4575bd,
+	orange: #f08840
+);
+
+// +++ +++ GLOBAL COLORS +++ +++
+$global-colors: (
+	white: #fff,
+	blue: #85a0c8,
+	main-blue: #32558a,
+	light-gray: #ebebeb,
+	light-blue: #4575bd,
+	dark-blue: #29313d,
+	logo-color: #7684b5,
+	orange: #f08840,
+	top-logo-color: #7f8dbc
+);
+
+// +++ +++ GLOBAL RESOLUTIONS +++ +++
+$global-resolutions: (
+	phone: 599px, 
+	tablet-portrait: 600px,
+	tablet-landscape: 900px,
+	desktop: 1200px,
+	xl: 1440px
+);
+
+// +++ +++ GLOBAL TRANSITION TIMES +++ +++
+$global-transition-time: (
+	slow: 0.5s
+);

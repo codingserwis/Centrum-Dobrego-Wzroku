@@ -1,0 +1,163 @@
+// +++ +++ +++ CONFIG +++ +++ +++
+// +++ +++ FONTS +++ +++
+// +++ FONT FAMILY +++
+$heading-font: $global-heading-font;
+$body-font: $global-body-font;
+$body-font-size: $global-body-font-size;
+$body-font-color: map-get($global-font-colors, black);
+// +++ FONT COLORS +++
+$font-orange: map-get($global-font-colors, orange);
+$font-white: map-get($global-font-colors, white);
+// +++ +++ COLORS +++ +++
+$main-blue: map-get($global-colors, main-blue);
+$dark-blue: map-get($global-colors, dark-blue);
+$light-blue: map-get($global-colors, light-blue);
+$orange: map-get($global-colors, orange);
+// +++ +++ TRANSITION +++ +++
+$tr-slow: map-get($global-transition-time, slow);
+// +++ +++ +++ +++ +++ +++
+* {
+	position: relative;
+}
+html {
+	font-family: $body-font;
+	font-size: $body-font-size;
+	color: $body-font-color;
+}
+a {
+	text-decoration: none;
+}
+section {
+	width: 100%;
+	padding: 2rem 0;
+}
+aside {
+	display: none;
+		@include for_tablet_landscape {
+			display: block;
+		}
+}
+address {
+	font-style: normal;
+	margin-bottom: 2rem;
+}
+footer {
+	width: 100%;
+	padding: 50px 0 5px 0;
+	background-color: $dark-blue;
+}
+%row {
+	content: " ";
+	display: table;
+}
+.row:before {
+	@extend %row;
+}
+.row:after {
+	@extend %row;
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.f_left {
+	@include for_tablet_portrait {
+		float: left;
+	}
+}
+.f_right {
+	@include for_tablet_portrait {
+		float: right;
+	}
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 0.5rem;
+		@include for_tablet_landscape {
+			width: 90%;
+		}
+}
+.news-container {
+	padding: 0;
+}
+.lblue-bcg {
+	background-color: $main-blue;
+}
+.dblue-bcg {
+	background-color: $dark-blue;
+}
+.orange-underscore, .orange-underscore-left, .orange-underscore-right {
+	display: block;
+	width: 100%;
+	margin: 0 0 0.75rem 0;
+	@include my_border(top, 2px, solid, $orange);
+		@include from_xl_desktop {
+			width: 25%;
+		}
+}
+.orange-underscore-left {
+	float: left;
+}
+.orange-underscore-right {
+	float: right;
+}
+.margin-bottom {
+	margin-bottom: 1rem;
+}
+.social-box {
+	display: none;
+	@include for_tablet_landscape {
+		display: block;
+		position: fixed;
+		top: 50%;
+		right: 0;
+	}
+}
+.fb-box {
+	width: 50px;
+	height: 50px;
+	background-color: $main-blue;
+		a {
+			color: $font-white;
+			display: block;
+			padding: 11px;
+			text-align: center;
+		}
+}
+.to-top-box {
+	width: 50px;
+	height: 50px;
+	display: block;
+	opacity: 0;
+	position: fixed;
+	right: 1%;
+	bottom: 10%;
+	background-color: $main-blue;
+		a {
+			color: $font-white;
+			display: block;
+			padding: 8px;
+			text-align: center;
+		}
+}
+@keyframes s {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	100% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.show {
+	animation-name: s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
