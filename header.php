@@ -54,9 +54,8 @@
 						</a>
 					</div>
 					<div class="top_heading">
-						<h1>
-							centrum dobrego wzroku okulista - optyk
-						</h1>
+						<h1>centrum dobrego wzroku</h1>
+						<h1>okulista - optyk</h1>
 					</div>
 				</div>
 			</div>

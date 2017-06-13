@@ -28,5 +28,5 @@
 }
 // +++ TRANSITIONS +++
 @mixin my_transition ($prop, $time){
-	transition: $prop $time;
+	transition: $prop $time ease;
 }

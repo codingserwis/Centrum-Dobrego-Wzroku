@@ -100,6 +100,12 @@ $tr-slow: map-get($global-transition-time, slow);
 			width: 20%;
 			float: left;
 		}
+		@include for_desktop {
+			width: 16%;
+		}
+		@include from_xl_desktop {
+			width: 13%;
+		}
 		a {
 			display: block;
 		}
@@ -113,7 +119,7 @@ $tr-slow: map-get($global-transition-time, slow);
 		@include for_tablet_landscape {
 			width: 50%;
 			float: left;
-			padding: 1.625rem 1rem;
+			padding: 1.625rem 0.5rem;
 		}
 	 	h1 {
 	 		font-family: serif;
@@ -142,6 +148,15 @@ $tr-slow: map-get($global-transition-time, slow);
 			text-align: left;
 		}
 }
+.flex {
+	display: flex;
+	flex-direction: column;
+		@include for_tablet_portrait {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+}
 .servis-box {
 	width: 100%;
 	min-height: 360px;
@@ -160,6 +175,9 @@ $tr-slow: map-get($global-transition-time, slow);
 			line-height: 2.0rem;
 			text-transform: uppercase;
 			color: $heading-font-color;
+				@include for_desktop {
+					min-height: 96px;
+				}
 		}
 		p {
 			margin: 1.5rem 0;
@@ -180,12 +198,10 @@ $tr-slow: map-get($global-transition-time, slow);
 				}
 		}
 	@include for_tablet_portrait {
-		float: left;
 		width: 49%;
 	}
 	@include for_tablet_landscape {
 		width: 33%;
-		float: left;
 		padding-bottom: 1rem;
 	}
 	@include for_desktop {
