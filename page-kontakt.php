@@ -14,7 +14,7 @@ get_header(); ?>
 					<h2 class="servis-post-title">
 						Zapraszamy do naszych salonów w godzinach
 					</h2>
-					<div class="">
+					<div class="row">
 						<div class="news-hours lblue-bcg kontakt-box">
 							<?php get_template_part('template-parts/offices-hours-ozimska'); ?>
 						</div>
@@ -27,7 +27,8 @@ get_header(); ?>
 			</div>
 			<aside class="custom-post-side">
 				<div class="post-contact-box">
-					<h2>umów się na wizyte</h2>
+					<h2>przyjdź do salonu</h2>
+					<h2>i umów się na wizytę</h2>
 					<div>
 						<?php get_template_part('template-parts/offices-address-niemodlinska-footer'); ?>
 					</div>
