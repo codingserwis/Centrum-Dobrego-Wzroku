@@ -15,7 +15,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!-- <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/jquery.sticky-kit.js"></script> -->
 		<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/app.js"></script>
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/main.css">
+		<!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/main.css"> -->
 		<title><?php bloginfo('name'); ?></title>
 		<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -1,7 +1,17 @@
 <?php 
-
-// Filter to load Carousel
-add_filter('carousel_slider_load_scripts', 'carousel_slider_load_scripts');
+/** 
+ *	Centrum Dobrego Wzroku theme - functions
+ */
+/**
+ * Enquequing style and scripts to the theme
+ */
+function add_theme_css() {
+	wp_enqueue_style( 'main', get_template_directory_uri().'/assets/css/main.css', array(), '1.0', 'all' );
+}
+add_action('wp_enqueue_scripts', 'add_theme_css' );
+/** 
+ *	Filter to load Carousel for logo in home page
+ */
 function carousel_slider_load_scripts( $load_scripts ) {
     // To use only for front page
     if ( is_front_page() ) {
@@ -9,31 +19,38 @@ function carousel_slider_load_scripts( $load_scripts ) {
     }
     return $load_scripts;
 }
+add_filter('carousel_slider_load_scripts', 'carousel_slider_load_scripts');
+/**
+ *	Register menus in the theme 
+ */
+function myCustomMenu(){
+	$locations = array(
+						'header_menu' => 'Menu główne',
+						'footer_menu' => 'Menu w stopce',
+					);
+	register_nav_menus( $locations );
+}
+add_action('init', 'myCustomMenu');
 
-// Menu 
-	function myCustomMenu(){
-		$locations = array(
-								'header_menu' => 'Menu główne',
-								'footer_menu' => 'Menu w stopce',
-						);
-		register_nav_menus( $locations );
-	}
-
-	add_action('init', 'myCustomMenu');
-
-// SVG uploads
+/**
+ * Function that allows to load SVG files to the media
+ */
 function cc_mime_types($mimes) {
   $mimes['svg'] = 'image/svg+xml';
   return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
-//Post thumbnails
+/**
+ * Post thumbnails
+ */
 if ( function_exists( 'add_theme_support' ) ) {
-		add_theme_support( 'post-thumbnails' );
-	}
+	add_theme_support( 'post-thumbnails' );
+}
 
-// Register side bar
+/**
+ *	Register Side Bars
+ */
 function mySidebar(){
 	   /**
 		* Creates a sidebar
@@ -49,13 +66,13 @@ function mySidebar(){
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>'
 		);
-	
 		register_sidebar( $args );
-	
 }
 add_action('widgets_init', 'mySidebar' );
 
-// Custom excerpts
+/**
+ *	Custom excerpts
+ */ 
 function customExcerpts($more){
 	global $post;
 	return '... <a class="" href="' . get_permalink($post -> ID) . '">czytaj dalej</a>';
