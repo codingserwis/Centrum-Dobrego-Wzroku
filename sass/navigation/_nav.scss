@@ -13,27 +13,11 @@
 	margin: 0 auto;
 	padding: 0.6rem 0;
 		@include for_desktop {
-<<<<<<< HEAD
  			width: 93%;
  		}
  		@include custom_rwd (1236px) {
  			width: 90%;
  		}
-}
-.main_nav .menu {
-	display: flex;
- 	flex-direction: row;
- 	flex-wrap: wrap;
- 	justify-content: center;
- 		@include for_desktop {
- 			justify-content: left;
- 		}
-=======
-			width: 93%;
-		}
-		@include custom_rwd (1236px) {
-			width: 90%;
-		}
 }
 .main_nav .menu {
 	display: flex;
@@ -43,7 +27,6 @@
 		@include for_desktop {
 			justify-content: left;
 		}
->>>>>>> style-fixes
 		li {
 			position: relative;
 			display: inline-block;

@@ -36,14 +36,7 @@ $desktop-xl: map-get($global-resolutions, xl);
 	}
 }
 @mixin custom_rwd ($custom-res) {
-<<<<<<< HEAD
- 	@media (min-width: $custom-res) {
- 		@content;
-	}
-} 
-=======
 	@media (min-width: $custom-res) {
 		@content;
 	}
 }
->>>>>>> style-fixes
