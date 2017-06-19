@@ -42,7 +42,8 @@
 			<div class="header_container">
 				<div class="row">
 					<div class="fast-contact">
-						<h3 class="top-contact-heading">umów się na wizytę</h3>
+						<h3 class="top-contact-heading">przyjdź do salonu</h3>
+						<h3 class="top-contact-heading">i umów się na wizytę</h3>
 						<ul class="fast-contact-list">
 							<li class="fast-con-left">
 								<a class="top-contact-link" href="tel:+48666666666">

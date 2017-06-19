@@ -280,8 +280,15 @@ $tr-slow: map-get($global-transition-time, slow);
 	font-size: 1.7rem;
 	line-height: 2.3rem;
 	margin-bottom: 1rem;
+		@include for_tablet_landscape {
+			font-size: 1.6rem;
+		}
+		@include for_desktop {
+			font-size: 1.3rem;
+		}
 		@include from_xl_desktop {
 			width: 92%;
+			font-size: 1.6rem;
 		}
 }
 .hours-list {
@@ -367,7 +374,10 @@ $tr-slow: map-get($global-transition-time, slow);
 		}
 	}
 .kontakt-box {
-	width: 50%;
+	width: 100%;
+		@include for_tablet_landscape {
+			width: 50%;
+		}
 	.hours-heading {
 		width: 100%;
 	}

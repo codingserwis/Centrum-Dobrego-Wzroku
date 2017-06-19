@@ -90,17 +90,31 @@ $tr-slow: map-get($global-transition-time, slow);
 .post-contact-box {
 	min-height: 530px;
 	height: 530px;
-		@include from_xl_desktop {
-			min-height: 440px;
-			height: 440px;
-		}
 	background-color: $main-blue;
 	color: $white;
 	padding: 1rem;
+		@include for_tablet_landscape {
+			padding: 0.5rem;
+		}
+		@include for_desktop {
+			padding: 1rem;
+		}
+		@include from_xl_desktop {
+			min-height: 470px;
+			height: 470px;
+		}
 		h2 {
 			text-transform: uppercase;
 			font-size: 1.4rem;
 			margin-bottom: 0.5rem;
+				@include for_tablet_landscape {
+					font-size: 1.0rem;
+					line-height: 1.3rem;
+				}
+				@include for_desktop {
+					font-size: 1.3rem;
+					line-height: 1.8rem;
+				}
 		}
 }
 .servis-post-title {
