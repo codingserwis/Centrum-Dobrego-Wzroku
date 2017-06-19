@@ -11,6 +11,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="Centrum Dobrego Wzroku, salony optyczne, salon optyczny, lekarz opole, lekarz okulista, lekarz okulista opole, prywatny gabinet lekarski, prywatne gabinety lekarskie, okulary, okulary korekcyjne, okulary przeciwsłoneczne, okulary dla dzieci">
 		<link href="https://fonts.googleapis.com/css?family=Nunito:300|Roboto:300&amp;subset=latin-ext" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory');?>/assets/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory');?>/assets/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_directory');?>/assets/favicon/favicon-16x16.png">
+		<link rel="manifest" href="<?php bloginfo('template_directory');?>/assets/favicon/manifest.json">
+		<link rel="mask-icon" href="<?php bloginfo('template_directory');?>/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/assets/favicon/favicon.ico">
+		<meta name="msapplication-config" content="<?php bloginfo('template_directory');?>/assets/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
 		<script src="https://use.fontawesome.com/b1f95d1c43.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!-- <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/jquery.sticky-kit.js"></script> -->
@@ -50,7 +58,7 @@
 					</div>
 					<div class="top-logo">
 						<a href="<?php bloginfo('url'); ?>">
-							<img src="<?php bloginfo('template_directory');?>/images/top_logo.jpg">
+							<img src="<?php bloginfo('template_directory');?>/assets/images/top_logo.jpg">
 						</a>
 					</div>
 					<div class="top_heading">

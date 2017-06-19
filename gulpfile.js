@@ -30,7 +30,7 @@ gulp.task('sass', function(){
          	sourceComments: false, 
         }).on('error', sass.logError))
        	.pipe(sourceMaps.write('./'))
-        .pipe(gulp.dest("./css/"))
+        .pipe(gulp.dest("./assets/css/"))
         .pipe(browserSync.stream());
 });
 
