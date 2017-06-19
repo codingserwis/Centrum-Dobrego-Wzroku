@@ -20,7 +20,7 @@
 		<meta name="msapplication-config" content="<?php bloginfo('template_directory');?>/assets/favicon/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 		<script src="https://use.fontawesome.com/b1f95d1c43.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 		<!-- <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/jquery.sticky-kit.js"></script> -->
 		<!-- <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/app.js"></script> -->
 		<!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/main.css"> -->
@@ -62,9 +62,8 @@
 						</a>
 					</div>
 					<div class="top_heading">
-						<h1>
-							centrum dobrego wzroku okulista - optyk
-						</h1>
+						<h1>centrum dobrego wzroku</h1>
+						<h1>okulista - optyk</h1>
 					</div>
 				</div>
 			</div>

@@ -1,7 +1,7 @@
 //Sticky menu
 function stickyMenu(element, element2){
-	$(window).scroll(function(event) {
-		if($(this).scrollTop() > element){
+	jQuery(window).scroll(function(event) {
+		if(jQuery(this).scrollTop() > element){
 			element2.addClass('sticky');
 		} else {
 			element2.removeClass('sticky');
@@ -9,11 +9,11 @@ function stickyMenu(element, element2){
 		
 	});
 }
-$(function() {
-	var header = $('.header_container').height(),
-		nav = $('nav'),
-		toTop = $('a[href="#top"]'),
-		elements = $('html, body');
+jQuery(function() {
+	var header = jQuery('.header_container').height(),
+		nav = jQuery('nav'),
+		toTop = jQuery('a[href="#top"]'),
+		elements = jQuery('html, body');
 // Scrolling to top
 		toTop.click(function(e) {
 			e.preventDefault();
@@ -24,9 +24,9 @@ $(function() {
 
 });
 // Showing to top button on the right side of page
-$(document).scroll(function(){
-	var toTopBtn = $('.to-top-box'),
-		top = $(window).scrollTop();
+jQuery(document).scroll(function(){
+	var toTopBtn = jQuery('.to-top-box'),
+		top = jQuery(window).scrollTop();
 	if(top > 300) {
 		toTopBtn.addClass('show');
 	} else {

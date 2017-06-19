@@ -35,3 +35,8 @@ $desktop-xl: map-get($global-resolutions, xl);
 		@content;
 	}
 }
+@mixin custom_rwd ($custom-res) {
+ 	@media (min-width: $custom-res) {
+ 		@content;
+	}
+} 

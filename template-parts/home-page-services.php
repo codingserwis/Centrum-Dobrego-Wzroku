@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row flex">
 <?php  
 			$args = array('post_type' => 'ouer-services',
 							'orderby' => 'ID',
