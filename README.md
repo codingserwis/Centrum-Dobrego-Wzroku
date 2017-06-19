@@ -1,6 +1,6 @@
 # Centrum Dobrego Wzroku Okulista - Optyk
 
-## http://salon-optyczny.opole.pl
+## [www.salon-optycny.opole.pl](http://salon-optyczny.opole.pl)
 
 Projekt **Centrum Dobrego Wzroku** - został zrealizowany w oparciu o CMS WordPress. Szablon został stworzony od podstaw, nie wykorzystano żadnego gotowego projektu w celu jego modyfikacji i dostosowania do wymogów klienta.
 
