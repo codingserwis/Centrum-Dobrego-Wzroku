@@ -70,9 +70,15 @@ $tr-slow: map-get($global-transition-time, slow);
 	padding: 0.5rem;
 }
 .single-content {
+	font-size: 1.2rem;
+	line-height: 1.8rem;
 	p {
-		font-size: 1.2rem;
-		line-height: 1.8rem;
+		//font-size: 1.2rem;
+		//line-height: 1.8rem;
+	}
+	ul {
+		padding-left: 2rem;
+		list-style-type: disc;
 	}
 }
 .custom-post-side {
@@ -118,9 +124,14 @@ $tr-slow: map-get($global-transition-time, slow);
 		}
 }
 .post-content {
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h4, h5, h6 {
 		font-size: 1.6rem;
 		margin: 0.5rem 0;
+		line-height: 1.9rem;
+	}
+	h3 {
+		font-size: 1.3rem;
+		margin: 0.75rem 0;
 	}
 	p {
 		font-size: 1.1rem;
