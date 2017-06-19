@@ -101,19 +101,16 @@ $tr-slow: map-get($global-transition-time, slow);
 			float: left;
 		}
 		@include for_desktop {
-<<<<<<< HEAD
  			width: 16%;
  		}
  		@include from_xl_desktop {
  			width: 13%;
  		}
-=======
 			width: 16%;
 		}
 		@include from_xl_desktop {
 			width: 13%;
 		}
->>>>>>> style-fixes
 		a {
 			display: block;
 		}
@@ -183,11 +180,7 @@ $tr-slow: map-get($global-transition-time, slow);
 			line-height: 2.0rem;
 			text-transform: uppercase;
 			color: $heading-font-color;
-<<<<<<< HEAD
-			@include for_desktop {
-=======
 				@include for_desktop {
->>>>>>> style-fixes
 					min-height: 96px;
 				}
 		}
