@@ -31,4 +31,3 @@ $(document).scroll(function(){
 		toTopBtn.removeClass('show');
 	}
 });
-//$(".custom-post-side").stick_in_parent();

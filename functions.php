@@ -7,6 +7,8 @@
  */
 function add_theme_css() {
 	wp_enqueue_style( 'main', get_template_directory_uri().'/assets/css/main.css', array(), '1.0', 'all' );
+
+	wp_enqueue_script( 'app', get_template_directory_uri().'/assets/js/app.js', array('jquery'), '1.0', false );
 }
 add_action('wp_enqueue_scripts', 'add_theme_css' );
 /** 

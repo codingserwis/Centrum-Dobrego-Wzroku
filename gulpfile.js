@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
 	sass = require('gulp-sass'),
-	sourceMaps = require('gulp-sourcemaps');
+	sourceMaps = require('gulp-sourcemaps'),
+	uglify = require('gulp-uglify');
 
 // Configure auto reload task
 gulp.task('browser-sync', function(){
@@ -31,6 +32,13 @@ gulp.task('sass', function(){
        	.pipe(sourceMaps.write('./'))
         .pipe(gulp.dest("./css/"))
         .pipe(browserSync.stream());
+});
+
+// JS minification
+gulp.task('min', function() {
+	return gulp.src('js/**/*.js')
+		.pipe(uglify())
+		.pipe(gulp.dest('assets/js/'));
 });
 
 gulp.task('default', ['browser-sync', 'sass'], function(){
