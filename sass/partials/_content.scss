@@ -104,8 +104,16 @@ $tr-slow: map-get($global-transition-time, slow);
  			width: 16%;
  		}
  		@include from_xl_desktop {
+<<<<<<< HEAD
  			width: 13%;
  		}
+=======
+ 			width: 13%
+		}
+		@include from_xl_desktop {
+			width: 13%;
+		}
+>>>>>>> cleaning
 		a {
 			display: block;
 		}
