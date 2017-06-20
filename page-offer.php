@@ -19,7 +19,7 @@ get_header(); ?>
 			<aside class="custom-post-side">
 				<div class="post-contact-box">
 					<h2>przyjdź do salonu</h2>
-					<h2>i umów się na wizyte</h2>
+					<h2>i umów się na wizytę</h2>
 					<div>
 						<?php get_template_part('template-parts/offices-address-niemodlinska-footer'); ?>
 					</div>
