@@ -6,9 +6,13 @@
  * Enquequing style and scripts to the theme
  */
 function add_theme_css() {
-	wp_enqueue_style( 'main', get_template_directory_uri().'/assets/css/main.css', array(), '1.0', 'all' );
 
-	wp_enqueue_script( 'app', get_template_directory_uri().'/assets/js/app.js', array('jquery'), 1.0, true );
+	// versions of files
+	$styles_version = filemtime( get_template_directory() . '/assets/css/main.css' );
+	wp_enqueue_style( 'main', get_template_directory_uri().'/assets/css/main.css', array(), $styles_version, 'all' );
+
+	$script_version = filemtime( get_template_directory() . '/assets/js/app.js' );
+	wp_enqueue_script( 'app', get_template_directory_uri().'/assets/js/app.js', array('jquery'), $script_version, true );
 }
 add_action('wp_enqueue_scripts', 'add_theme_css' );
 /** 
