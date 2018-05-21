@@ -26,6 +26,10 @@ html {
 }
 a {
 	text-decoration: none;
+
+	&.footer-link {
+		color: $font-white;
+	}
 }
 section {
 	width: 100%;

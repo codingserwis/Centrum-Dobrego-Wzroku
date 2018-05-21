@@ -26,7 +26,7 @@
 		<div class="row">
 			<div class="copy">
 				<span>
-					Centrum Dobrego Wzroku 2017 | Projekt i wykonanie Codingserwis.pl
+					Centrum Dobrego Wzroku <?php echo date( 'Y' ); ?> | Projekt i wykonanie <a class="footer-link" href="http://codingserwis.pl/?utm_source=cdb-projekt_page&utm_medium=footer_link&utm_campaign=client_page_link">codingSerwis.pl</a>
 				</span>
 			</div>
 		</div>
